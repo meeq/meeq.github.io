@@ -13,7 +13,10 @@ Yesterday I finally got around to packaging up [a ROM file](https://github.com/m
 
 If you came here just for the ROM, you may be somewhat disappointed to find that it does not run in most N64 emulators. If you are interested as to why, the short answer is that most emulators don't attempt to accurately represent the Nintendo 64 hardware. The best way to play this ROM is on a real N64 using a flash cart such as [64drive by retroactive](http://64drive.retroactive.be/) or [EverDrive-64 by krikzz](http://krikzz.com/).
 
-This first part will be an introduction into Flappy Bird and Nintendo 64 development to set the stage for a technical deep-dive of the source code.
+This first part is an introduction into Flappy Bird and Nintendo 64 development to set the stage for a technical deep-dive of the source code. You can also skip ahead to the other posts in this series:
+
+  1. Introduction to Flappy Bird and N64 homebrew
+  2. [Starting an N64 homebrew project with `libdragon`](/software/2017/06/06/flappy-bird-nintendo-64-part-2.html)
 
 ## Some context on Flappy Bird
 
@@ -65,7 +68,7 @@ Way back in 2005 a dedicated soul named [Ryan Underwood (Halley's Comet Software
 
 Ultimately, libdragon seemed up to the task, despite its work-in-progress status and limited feature-set compared to the commercial SDK. [Controller input](https://dragonminded.com/n64dev/libdragon/doxygen/group__controller.html) worked, [2D graphics](https://dragonminded.com/n64dev/libdragon/doxygen/group__graphics.html) rendered rectangles and sprites using both software and hardware-acceleration, [audio output](https://dragonminded.com/n64dev/libdragon/doxygen/group__audio.html) appeared to be possible with raw waveforms, and all of it seemed [reasonably well-documented](https://dragonminded.com/n64dev/libdragon/doxygen/modules.html). I appreciated being able to enjoy the benefits of a modern compiler and only had minor hiccups getting everything working on my Macbook Pro mostly related to building GCC.
 
-![libdragon spritetest example]({{ site.url }}/assets/flappy-libdragon-spritetest.gif)
+![libdragon vtest example]({{ site.url }}/assets/flappy-libdragon-vtest.png)
 
 Not using the commercial N64 SDK simultaneously liberated me from the tyranny of closed-source proprietary software, but also restricted the project with the severe caveat that most mature and popular N64 emulators won't be able to run the game.
 
@@ -85,6 +88,6 @@ Since libdragon's library does not even remotely resemble the official Nintendo 
 
 ## Getting started making stuff
 
-Now that I had my toolchain and what to make, it was time to ~~carefully plan out the project~~ jump right in with coding and figure things out as I go. In part 2 I will break down the graphics, audio, and gameplay code and dig into the technical details of building a game with libdragon.
+Now that I had my toolchain and what to make, it was time to ~~carefully plan out the project~~ jump right in with coding and figure things out as I go. [Read on to part 2 for a look into the technical details of building a game with libdragon.](/software/2017/06/06/flappy-bird-nintendo-64-part-2.html)
 
 Thanks for reading!
