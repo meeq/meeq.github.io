@@ -7,18 +7,21 @@ tags:
   - Retrogaming
   - Necromancy
 ---
-Welcome back to my post-mortem series looking back at building a Flappy Bird clone playable on actual Nintendo 64 hardware. This second part is an exploration of starting a project with the `libdragon` N64 homebrew toolchain.
+Welcome back to my post-mortem series looking back at building a Flappy Bird clone playable on actual Nintendo 64 hardware. This second part is an exploration of starting a project with the `libdragon` N64 homebrew toolchain. We will be compiling and installing an open-source N64 software development kit from source and using it to build and test an N64 ROM in an emulator.
 
-![libdragon spritetest example ROM]({{ site.url }}/assets/flappy-libdragon-spritetest.gif)
+![libdragon spritetest example ROM]({{ site.url }}/assets/flappy/libdragon-spritetest.gif)
 
-You can also skip around to the other posts in this series:
+Check out the other posts in this series:
 
-  1. [Introduction to Flappy Bird and N64 homebrew](/software/2017/05/31/flappy-bird-nintendo-64-part-1.html)
-  2. Starting an N64 homebrew project with `libdragon`
+#### [Flappy Bird for Nintendo 64 Project Site](/FlappyBird-N64)
+
+1. [Introduction to Flappy Bird and N64 homebrew](/software/2017/05/31/flappy-bird-nintendo-64-part-1.html)
+2. **Starting an N64 homebrew project with `libdragon`**
+3. [Adapting Flappy Bird resources to `libdragon` and the N64 hardware](/software/2017/06/07/flappy-bird-nintendo-64-part-3.html)
 
 ## Preparing the workspace
 
-`libdragon` expects your N64 SDK installation directory to be exported as the `N64_INST` variable in your shell. You should ensure that this variable is properly set in your shell session by adding it to your `~/.bashrc` (or `~/.bash_profile` on MacOS):
+`libdragon` expects the N64 SDK installation directory to be exported as the `N64_INST` variable in your shell. I have ensured that this variable is properly set in my bash sessions by adding it to `~/.bashrc` (or `~/.bash_profile` on MacOS):
 
 ```shell
 echo "export N64_INST=${HOME}/Projects/n64/mips64-toolchain" >> ~/.bashrc
@@ -64,21 +67,21 @@ We now should have a `spritemap.z64` ROM file that's ready to be fed into an N64
 
 ### A sidebar about byte-swapping
 
-![Doctor V64]({{ site.url }}/assets/flappy-v64-device.png)
+![Doctor V64]({{ site.url }}/assets/flappy/v64-device.png)
 
 Thanks to the popularity of the [Doctor V64 development device](https://en.wikipedia.org/wiki/Doctor_V64) (pictured above) and a modified BIOS that allowed copying cartridge data over the V64's parallel port, the V64 format is quite common in the N64 backup/emulation scene. Another popular device for dumping N64 ROMs was the [Mr. Backup Z64](https://en.wikipedia.org/wiki/Mr._Backup_Z64) (pictured below), which produced files in the Z64 format onto [ZIP-100 diskettes](https://www.youtube.com/watch?v=1pBhEaMp8mw).
 
-![Mr. Backup Z64]({{ site.url }}/assets/flappy-z64-device.png)
+![Mr. Backup Z64]({{ site.url }}/assets/flappy/z64-device.png)
 
 Byte-ordering is an artifact of CPU architecture that dictates how multiple bytes are combined to store larger values in memory. The Nintendo 64's MIPS VR4300 CPU (as well as PowerPC CPUs) stores the most-significant byte (MSB) first, whereas Intel CPUs natively store the least-significant byte (LSB) in the lowest address. As you can see in the comparison below, the game title in the ROM header is clearly readable in Z64 format, but a garbled mess in the V64 format:
 
-![Hex Editor comparison of Z64 vs V64 formats]({{ site.url }}/assets/flappy-z64-vs-v64.png)
+![Hex Editor comparison of Z64 vs V64 formats]({{ site.url }}/assets/flappy/z64-vs-v64.png)
 
 Some emulators are generous and will happily accept ROMs of either flavor, sometimes even inside of a .zip of .7z archive. In order to load ROMs with CEN64 you must provide a "*Z64 big-endian (not byte-swapped) format*" ROM instead of the "*V64 little-endian (byte-swapped) format*".
 
 ### Care and feeding of your CEN64
 
-![CEN64 Logo]({{ site.url }}/assets/flappy-cen64-logo.png)
+![CEN64 Logo]({{ site.url }}/assets/flappy/cen64-logo.png)
 
 [As we covered in part 1](/software/2017/05/31/flappy-bird-nintendo-64-part-1.html), `libdragon` requires accurate low-level emulation. You will also need a [dump of the Nintendo 64 PIF ROM](http://emulation.gametechwiki.com/index.php/Emulator_Files#Nintendo_64). At the moment, the best emulator I have found to test homebrew is [CEN64](https://github.com/tj90241/cen64) by [Tyler Stachecki (MarathonMan)](https://github.com/tj90241). I recommend building and running from source to keep up with the latest improvements:
 
@@ -96,7 +99,7 @@ If all that was successful, you should be able to run the `cen64` binary with th
 ./cen64 $PATH_TO_PIFDATA_ROM $LIBDRAGON_DIR/examples/spritemap/spritemap.z64
 ```
 
-![libdragon spritemap example]({{ site.url }}/assets/flappy-libdragon-spritemap.png)
+![libdragon spritemap example]({{ site.url }}/assets/flappy/libdragon-spritemap.png)
 
 ## Deconstructing the sample
 
@@ -210,8 +213,8 @@ The `spritemap` example has two code-paths for drawing based on the `mode` flag,
   * Software rendering uses the CPU to iterate over image pixel data in RAM and set it to the framebuffer directly. This is the "slow way" of drawing sprites, but it is not subject to the harsh 4KB TMEM limitation that the RDP imposes.
   * Hardware rendering uses the RDP to load texture data into TMEM and blit it into the framebuffer while the CPU performs other tasks. This is the "fast way" of drawing, but sprites larger than 4KB must be broken up into smaller tiles or drawn in software due to extremely limited texture memory.
 
-## Wrapping it up
+## Wrapping up
 
-Okay, so now we've got a working toolchain and a sample project that gives us the absolute necessities of setting up graphics and controller input. We also have an emulator to test with. At this point we've got all the tools we need to get started building our own homebrew on the Nintendo 64. Stay tuned for part 3 of this series for a break-down of how I translated Flappy Bird to suit the limitations of libdragon and the N64 hardware.
+Okay, so now we've got a working toolchain and a sample project that gives us the absolute necessities of setting up graphics and controller input. We also have an emulator to test with. At this point we've got all the tools we need to get started building our own homebrew on the Nintendo 64. [Read on for part 3 of this series for a break-down of how I translated Flappy Bird to suit the limitations of libdragon and the N64 hardware](/software/2017/06/07/flappy-bird-nintendo-64-part-3.html).
 
 Thanks for reading!
