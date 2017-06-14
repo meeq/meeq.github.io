@@ -3,3 +3,4 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+google_analytics: UA-101038319-1
