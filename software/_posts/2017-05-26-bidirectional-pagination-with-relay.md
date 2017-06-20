@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Bi-Directional Cursor Pagination with React.js, Relay, and GraphQL
-category: Software
 tags:
   - React
   - GraphQL
@@ -9,8 +8,6 @@ tags:
   - Programming
   - JavaScript
 ---
-###### [This post was also published on HackerNoon, an online publication for software engineers.](https://hackernoon.com/bi-directional-cursor-pagination-with-react-js-relay-and-graphql-dc4ad6f9cbb0)
-
 Pagination comes in many different flavors depending on the desired user experience and the shape of the underlying API. GraphQL APIs such as [GitHub’s](https://developer.github.com/early-access/graphql/) implement the [Relay Cursor Connections Specification](https://facebook.github.io/relay/graphql/connections.htm) to standardize pagination and slicing of large result sets. This approach is well-suited to infinite-scrolling, but can also be used for “windowed” paging with next/previous page buttons.
 
 ![An example of bi-directional windowed paging using the GitHub GraphQL API]({{ site.url }}/assets/bidirectional-pagination-with-relay.png)
@@ -257,3 +254,5 @@ This container can be passed into a [Relay Renderer](https://facebook.github.io/
 I hope this was helpful for beginners trying to wrap their head around the GraphQL pagination model and integrate with React and Relay Classic. I wanted to share this because I could not find any examples of bi-directional pagination in GraphQL while solving this exercise.
 
 Thanks for reading.
+
+##### [This post was also published on HackerNoon, an online publication for software engineers.](https://hackernoon.com/bi-directional-cursor-pagination-with-react-js-relay-and-graphql-dc4ad6f9cbb0)

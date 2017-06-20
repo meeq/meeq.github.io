@@ -2,9 +2,6 @@
 layout: default
 title: Resume
 ---
-# Christopher Bonhage
-[408-320-5610](tel://4083205610) <br />
-[jobs@christopherbonhage.com](mailto:jobs@christopherbonhage.com)
 
 ## Skills
  * Extensive use and knowledge of Erlang, JavaScript, Python, C, C++, Objective-C, Swift.

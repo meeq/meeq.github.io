@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Cloning Flappy Bird for the Nintendo 64 with libdragon (Part 3)
-category: Software
 tags:
   - Programming
   - Retrogaming

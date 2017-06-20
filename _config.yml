@@ -3,4 +3,8 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+title: Christopher Bonhage
+author: Christopher Bonhage
+email: me@christopherbonhage.com
+github_username: meeq
 google_analytics: UA-101038319-1
