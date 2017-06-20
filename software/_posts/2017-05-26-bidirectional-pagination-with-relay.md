@@ -1,6 +1,8 @@
 ---
 layout: post
+type: article
 title: Bi-Directional Cursor Pagination with React.js, Relay, and GraphQL
+image: /assets/bidirectional-pagination-with-relay.png
 tags:
   - React
   - GraphQL
