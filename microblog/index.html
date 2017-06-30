@@ -1,0 +1,37 @@
+---
+layout: default
+title: μblog
+---
+
+<div class="home">
+
+  <h1>Recent μblog Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% if post.categories contains 'microblog' %}
+      <li>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {% if post.image %}
+            <img src="{{ site.url }}/assets/image-32px.png" />
+            {% endif %}
+            <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ post.date | date: "%B %-d %Y at %I:%M %p" }}
+            </time>
+          </a>
+
+          <div class="post-content" itemprop="articleBody">
+            {{ post.excerpt }}
+          </div>
+        </article>
+
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

@@ -13,4 +13,5 @@ google_analytics: UA-101038319-1
 header_pages:
   - index.md
   - posts.html
+  - microblog/index.html
   - resume.md
