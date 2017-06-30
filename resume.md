@@ -14,8 +14,9 @@ MDM, RFID (LLRP).
 
 **Apple TV** *Cupertino, CA* <br />
 Software Engineer (2016–2017)
+ * Contributed to development of TV app for iOS/tvOS and Music app for tvOS.
+ * Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://developer.apple.com/videos/play/wwdc2016/229/).
  * Extended functionality and fixed bugs in system applications and frameworks for iOS and tvOS.
- * Presented on-stage at WWDC 2016 session on ’Developing tvOS apps using TVMLKit’.
 
 **Apple IS&T Retail Systems Development** *Santa Clara Valley, CA* <br />
 Lead Software Developer (2010–2016)
