@@ -20,11 +20,11 @@ title: μblog
             <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
               {{ post.date | date: "%B %-d %Y at %I:%M %p" }}
             </time>
+            
+            <div class="post-content" itemprop="articleBody">
+              {{ post.excerpt }}
+            </div>
           </a>
-
-          <div class="post-content" itemprop="articleBody">
-            {{ post.excerpt }}
-          </div>
         </article>
 
       </li>
