@@ -1,8 +1,8 @@
 ---
 layout: post
 type: article
-title: Microblogging on iOS with Jekyll using Workflow.app
-image: /assets/microblogging-workflow.png
+title: Microblogging on iOS with Jekyll using `Working Copy.app` and `Workflow.app`
+image: /assets/microblogging/micropost-ui.png
 tags:
   - Blogging
   - Microblogging
@@ -26,7 +26,7 @@ In order to [publish a post using Jekyll](https://jekyllrb.com/docs/posts/):
 
 ![`Working Copy.app` screenshots]({{ site.url }}/assets/microblogging/working-copy-ui.png)
 
-It is possible to accomplish all of this on iOS using the awesome `Working Copy.app` by Anders Borum, which is an awesome Git client for iPhone/iPad with file editing and support for [iOS inter-app communication using `x-callback-url`](http://x-callback-url.com/). You will need unlock the full functionality of the app with the one-time In-App Purchase (or [buy the Enterprise Version](https://itunes.apple.com/us/app/working-copy-enterprise/id965019520?mt=8) which is already unlocked) in order to push commits to Git remotes.
+It is possible to accomplish all of this on iOS using the awesome `Working Copy.app` by Anders Borum, which is an outstanding Git client for iPhone/iPad with file editing and support for [iOS inter-app communication using `x-callback-url`](http://x-callback-url.com/). You will need unlock the full functionality of the app with the one-time In-App Purchase (or [buy the Enterprise Version](https://itunes.apple.com/us/app/working-copy-enterprise/id965019520?mt=8) which is already unlocked) in order to push commits to Git remotes.
 
 The multi-step process of creating and deploying a new post manually can be somewhat cumbersome and tedious, especially for [microblogging](https://en.wikipedia.org/wiki/Microblogging) when I'm out and about, which typically involves a short bit of text and an optional photo or video. For these "micro"-posts, I would prefer a streamlined interface with minimal input similar to Twitter's tweet UI:
 
