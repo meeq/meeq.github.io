@@ -5,12 +5,18 @@ title: Resume
 
 ## Skills
  * Extensive use and knowledge of Erlang, JavaScript, Python, C, C++, Objective-C, Swift.
- * Shipped software products using industry-standard frameworks like Backbone.JS, SproutCore, Knockout.JS, Cocoa, UIKit, CoreGraphics, PyObj-C.
+ * Shipped software products using industry-standard frameworks like ReactJS, Backbone.JS, SproutCore, Cocoa, UIKit, CoreGraphics, PyObj-C.
  * Experience with the use and operation of relational (Postgres, SQLite) and non-relational (CouchDB, MongoDB) databases.
  * Fluent with common protocols such as HTTP, REST, WebSockets, TCP/UDP Sockets, SSL/TLS,
 MDM, RFID (LLRP).
 
 ## Work Experience
+
+**Mix Tech, Inc.** *San Francisco, CA* <br />
+Senior Front-end Developer (2017-Present)
+  * Re-built web application using Webpack, ReactJS, Redux, and SASS.
+  * Modernized Node back-end code to ECMAScript 2017 (ES8).
+  * Implemented an experiments and rollout framework for A/B testing and feature deployment.
 
 **Apple TV** *Cupertino, CA* <br />
 Software Engineer (2016–2017)
