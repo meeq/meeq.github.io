@@ -12,9 +12,9 @@ MDM, RFID (LLRP).
 
 ## Work Experience
 
-**Mix Tech, Inc.** *San Francisco, CA* <br />
+**Mix Tech, Inc.** *San Francisco, CA* (Remote) <br />
 Senior Front-end Developer (2017-Present)
-  * Re-built web application using Webpack, ReactJS, Redux, and SASS.
+  * Re-built [social bookmarking web application](https://mix.com) using Webpack, ReactJS, Redux, and SASS.
   * Modernized Node back-end code to ECMAScript 2017 (ES8).
   * Implemented an experiments and rollout framework for A/B testing and feature deployment.
 
@@ -31,7 +31,7 @@ Corporate equipment.
  * Created rapidly-iterable demonstration prototypes as well as battle-tested, cross-datacenter production systems with thousands of simultaneous users.
 
 **Apple Retail Communications** *Cupertino, CA* <br />
-Web Developer Career Experience (Spring 2010)
+Web Developer (2010)
  * Worked on employee training and communication web application written in SproutCore.
  * Investigated framework issues and created test cases for bug reporting & verification.
 
