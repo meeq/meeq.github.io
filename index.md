@@ -12,4 +12,4 @@ You can also find me on [GitHub](https://github.com/meeq), [LinkedIn](https://ww
 
 ## Projects
 
-   * [![Flappy Bird Gameplay]({{ site.url }}/assets/flappy/n64-gameplay.gif)<br />Flappy Bird for Nintendo 64](/FlappyBird-N64) [(GitHub) ![Github project link]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/FlappyBird-N64)
+* [![Gameplay clip of "Flappy Bird"]({{ site.url }}/assets/flappy/n64-gameplay.gif)<br />Flappy Bird for Nintendo 64](/FlappyBird-N64) [(GitHub) ![Github project link]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/FlappyBird-N64)
