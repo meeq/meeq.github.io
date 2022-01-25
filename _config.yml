@@ -1,5 +1,5 @@
 theme: minima
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
