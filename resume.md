@@ -5,27 +5,29 @@ title: Resume
 
 ## Skills
 
-* Extensive use and knowledge of Erlang, JavaScript, Python, C, C++, Objective-C, Swift.
-* Shipped software products using industry-standard frameworks like ReactJS, Backbone.JS, SproutCore, Cocoa, UIKit, CoreGraphics, PyObj-C.
+* Extensive use and knowledge of Erlang, JavaScript, TypeScript, Python, C, C++, Objective-C, Swift.
+* Shipped software products using industry-standard frameworks like NextJS, ReactJS, Backbone.JS, Cocoa, UIKit, CoreGraphics, PyObj-C.
 * Experience with the use and operation of relational (Postgres, SQLite) and non-relational (CouchDB, MongoDB) databases.
-* Fluent with common protocols such as HTTP, REST, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
+* Fluent with common protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
 
 ## Work Experience
 
 **Stryk Group USA** *Bozeman, MT* (Remote)<br />
 Senior Software Engineer (2021-Present)
 
-* Built a business intelligence pipeline for analyzing and reporting key metrics for a high-traffic website
-* Contributed to the design of an anti-fragile, privacy-focused advertising and analytics platform
-* Developed integration tooling in TypeScript for NetSuite, MailChimp, Google Places, PeopleDataLabs
-* Oversaw development and testing of a cross-platform social media app by an external developer
+* Built a business intelligence pipeline for analyzing and reporting key metrics for a high-traffic website.
+* Contributed to the design of an anti-fragile, privacy-focused advertising and analytics platform.
+* Developed integration tooling in TypeScript for NetSuite, MailChimp, Google Places, Hull, PeopleDataLabs.
+* Oversaw development and testing of a cross-platform social media app by an external developer.
 
 **Mix Tech, Inc.** *San Francisco, CA* (Remote)<br />
 Senior Front-end Developer (2017-2021)
 
 * Re-built [social bookmarking web application](https://mix.com) using Webpack, ReactJS, Redux, and SASS.
-* Modernized Node back-end code to ECMAScript 2017 (ES8).
+* Modernized Node back-end code to ECMAScript 2017 (ES8) and Promises/`async`/`await`.
 * Implemented an experiments and rollout framework for A/B testing and feature deployment.
+* [Developed a Passport.js authentication plugin for "Sign in with Apple ID".](https://github.com/mix/passport-apple-id)
+* Prototyped a desktop-based browser-centric exploration app using TypeScript and Electron.
 
 **Apple TV** *Cupertino, CA*<br />
 Software Engineer (2016–2017)
@@ -37,14 +39,14 @@ Software Engineer (2016–2017)
 **Apple IS&T Retail Systems Development** *Santa Clara Valley, CA*<br />
 Lead Software Developer (2010–2016)
 
-* Built system for inventory, ownership and device usage tracking, mobile device management, network provisioning, certificate management, lifecycle tracking, and labeling of Retail and
-Corporate equipment.
+* Re-designed internal system for inventory, ownership and device usage tracking, mobile device management, network provisioning, certificate management, lifecycle tracking, and labeling of Retail and Corporate equipment.
 * Created rapidly-iterable demonstration prototypes as well as battle-tested, cross-datacenter production systems with thousands of simultaneous users.
+* Prototyped an RFID-based retail self-checkout process using Erlang and WebSockets.
 
 **Apple Retail Communications** *Cupertino, CA*<br />
 Web Developer (2010)
 
-* Worked on employee training and communication web application written in SproutCore.
+* Contributed to employee training and communication web application written in SproutCore.
 * Investigated framework issues and created test cases for bug reporting & verification.
 
 **Apple Retail Store** *King of Prussia, PA*<br />
