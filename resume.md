@@ -5,7 +5,7 @@ title: Resume
 
 ## Skills
 
-* Extensive use and knowledge of Erlang, JavaScript, TypeScript, Python, C, C++, Objective-C, Swift.
+* Extensive software development knowledge and experience using Erlang, JavaScript, TypeScript, Python, Go, C, C++, Objective-C, Swift.
 * Shipped software products using industry-standard frameworks like NextJS, ReactJS, Backbone.JS, Cocoa, UIKit, CoreGraphics, PyObj-C.
 * Experience with the use and operation of relational (Postgres, SQLite) and non-relational (CouchDB, MongoDB) databases.
 * Fluent with common protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
@@ -15,7 +15,7 @@ title: Resume
 **Stryk Group USA** *Bozeman, MT* (Remote)<br />
 Senior Software Engineer (2021-Present)
 
-* Built a business intelligence pipeline for analyzing and reporting key metrics for a high-traffic website.
+* Implemented a business intelligence pipeline for analyzing and reporting key metrics for a high-traffic website.
 * Contributed to the design of an anti-fragile, privacy-focused advertising and analytics platform.
 * Developed integration tooling in TypeScript for NetSuite, MailChimp, Google Places, Hull, PeopleDataLabs.
 * Oversaw development and testing of a cross-platform social media app by an external developer.
@@ -23,9 +23,9 @@ Senior Software Engineer (2021-Present)
 **Mix Tech, Inc.** *San Francisco, CA* (Remote)<br />
 Senior Front-end Developer (2017-2021)
 
-* Re-built [social bookmarking web application](https://mix.com) using Webpack, ReactJS, Redux, and SASS.
-* Modernized Node back-end code to ECMAScript 2017 (ES8) and Promises/`async`/`await`.
-* Implemented an experiments and rollout framework for A/B testing and feature deployment.
+* Re-built and maintained a [social bookmarking web application](https://mix.com) using Webpack, ReactJS, Redux, and SASS.
+* Modernized ECMAScript 5 client and server code to ECMAScript 2017 (ES8).
+* Implemented a flexible front-end framework for A/B testing, UI experiments, and feature flags
 * [Developed a Passport.js authentication plugin for "Sign in with Apple ID".](https://github.com/mix/passport-apple-id)
 * Prototyped a desktop-based browser-centric exploration app using TypeScript and Electron.
 
