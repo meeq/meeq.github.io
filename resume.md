@@ -39,7 +39,7 @@ Software Engineer (2016–2017)
 **Apple IS&T Retail Systems Development** *Santa Clara Valley, CA*<br />
 Lead Software Developer (2010–2016)
 
-* Re-designed internal system for inventory, ownership and device usage tracking, mobile device management, network provisioning, certificate management, lifecycle tracking, and labeling of Retail and Corporate equipment.
+* Re-designed internal system for inventory tracking, ownership/usage logging, mobile device management, network provisioning, certificate management, lifecycle analysis, and labeling of Retail and Corporate equipment.
 * Created rapidly-iterable demonstration prototypes as well as battle-tested, cross-datacenter production systems with thousands of simultaneous users.
 * Prototyped an RFID-based retail self-checkout process using Erlang and WebSockets.
 
