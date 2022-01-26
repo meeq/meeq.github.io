@@ -10,7 +10,7 @@ email: me@christopherbonhage.com
 github_username: meeq
 twitter_username: meeq64
 linkedin_username: christopher-bonhage
-description: ''
+description: ""
 
 google_analytics: UA-101038319-1
 google_adsense: ca-pub-6803706372264508
@@ -19,3 +19,11 @@ header_pages:
   - index.md
   - posts.html
   - resume.md
+
+github_logo_url: /assets/GitHub-Mark-20px.png
+
+defaults:
+  - scope:
+      path: "" # all files in the project
+    values:
+      layout: "default"
