@@ -8,11 +8,11 @@ tags:
   - Retrogaming
   - Necromancy
 ---
-Yesterday I finally got around to packaging up [a ROM file](https://github.com/meeq/FlappyBird-N64/blob/master/FlappyBird.z64?raw=true) and [releasing the source code to my "port" of Flappy Bird for the Nintendo 64](https://github.com/meeq/FlappyBird-N64), so I wanted to spend a little time to do a post-mortem on its development and look back on the bizarre phenomenon of Flappy Bird in general.
+Yesterday I finally got around to [releasing the source code to my "port" of Flappy Bird for the Nintendo 64](https://github.com/meeq/FlappyBird-N64), so I wanted to spend a little time to do a post-mortem on its development and look back on the bizarre phenomenon of Flappy Bird in general.
 
 ![Flappy Bird for Nintendo 64 Gameplay Video]({{ site.url }}/assets/flappy/n64-gameplay.gif)
 
-If you came here just for the ROM, you may be somewhat disappointed to find that it does not run in most N64 emulators. If you are interested as to why, the short answer is that most emulators don't attempt to accurately represent the Nintendo 64 hardware. The best way to play this ROM is on a real N64 using a flash cart such as [64drive by retroactive](http://64drive.retroactive.be/) or [EverDrive-64 by krikzz](http://krikzz.com/).
+If you are solely interested in playing the ROM, you may be somewhat disappointed to find that it does not run in most N64 emulators. If you are interested as to why, the short answer is that most emulators don't attempt to accurately represent the Nintendo 64 hardware. The best way to play this ROM is on a real N64 using a flash cart such as [64drive by retroactive](http://64drive.retroactive.be/) or [EverDrive-64 by krikzz](http://krikzz.com/).
 
 This first part is an introduction into Flappy Bird and Nintendo 64 development to set the stage for a technical deep-dive of the source code. You can also skip ahead to the other posts in this series:
 
@@ -42,21 +42,21 @@ Due to its simplicity, a lot of people (myself included) looked at Flappy Bird a
 
 As a gaming enthusiast born in the 1980's, I was quite delighted to see that there is a burgeoning scene of homebrew developers who have released versions of Flappy Bird for a wide variety of obsolete game consoles:
 
-  * [Atari 2600 (Flappo Bird)](https://tacsgames.com/2014/02/08/flappo-bird-out-now-for-atari-2600/)
-  * [Atari 2600 (Flappy)](https://atariage.com/store/index.php?l=product_detail&p=1038)
-  * [Commodore 64](http://sos.gd/flappy64/)
-  * [Dreamcast VMU](http://retrogamingmagazine.com/2016/03/28/flappy-bird-vmu-released-for-sega-dreamcast-visual-memory-unit/)
-  * [Game Boy](https://www.youtube.com/watch?v=L1arYXOawP8)
-  * [Game Boy Advance](https://www.youtube.com/watch?v=SNm9kNV9rnw)
-  * [Intellivision (Flapee Bird)](http://atariage.com/forums/topic/234851-collectorvision-official-thread-for-flapee-bird/)
-  * [Nintendo Entertainment System](http://www.retrogamenetwork.com/2014/07/13/new-port-of-discontinued-mobile-sensation-flappy-bird-hits-nintendo-entertainment-system/)
-  * [SEGA Master System (Flip Flap)](http://pdroms.de/mastersystem/flip-flap-v2-10-master-system-game)
-  * [SuperGrafx](https://www.youtube.com/watch?v=2ZhZ7e33zrg)
-  * [Super Nintendo (Super Mario World Code Injection)](https://www.youtube.com/watch?v=hB6eY73sLV0)
-  * [Text Instruments TI-99/4A](https://www.youtube.com/watch?v=XPXwxc-_Wp4)
-  * [Vectrex (Veccy Bird)](http://vectorgaming.proboards.com/thread/890/veccy-bird?page=1)
-  * [Virtual Boy (Flappy Cheep Cheep)](http://www.planetvb.com/modules/newbb/viewtopic.php?topic_id=5527)
-  * [ZX Spectrum](http://retrogamingmagazine.com/2015/01/24/type-program-flappy-bird-zx-spectrum-available-old-school-method/)
+* [Atari 2600 (Flappo Bird)](https://tacsgames.com/2014/02/08/flappo-bird-out-now-for-atari-2600/)
+* [Atari 2600 (Flappy)](https://atariage.com/store/index.php?l=product_detail&p=1038)
+* [Commodore 64](http://sos.gd/flappy64/)
+* [Dreamcast VMU](http://retrogamingmagazine.com/2016/03/28/flappy-bird-vmu-released-for-sega-dreamcast-visual-memory-unit/)
+* [Game Boy](https://www.youtube.com/watch?v=L1arYXOawP8)
+* [Game Boy Advance](https://www.youtube.com/watch?v=SNm9kNV9rnw)
+* [Intellivision (Flapee Bird)](http://atariage.com/forums/topic/234851-collectorvision-official-thread-for-flapee-bird/)
+* [Nintendo Entertainment System](http://www.retrogamenetwork.com/2014/07/13/new-port-of-discontinued-mobile-sensation-flappy-bird-hits-nintendo-entertainment-system/)
+* [SEGA Master System (Flip Flap)](http://pdroms.de/mastersystem/flip-flap-v2-10-master-system-game)
+* [SuperGrafx](https://www.youtube.com/watch?v=2ZhZ7e33zrg)
+* [Super Nintendo (Super Mario World Code Injection)](https://www.youtube.com/watch?v=hB6eY73sLV0)
+* [Text Instruments TI-99/4A](https://www.youtube.com/watch?v=XPXwxc-_Wp4)
+* [Vectrex (Veccy Bird)](http://vectorgaming.proboards.com/thread/890/veccy-bird?page=1)
+* [Virtual Boy (Flappy Cheep Cheep)](http://www.planetvb.com/modules/newbb/viewtopic.php?topic_id=5527)
+* [ZX Spectrum](http://retrogamingmagazine.com/2015/01/24/type-program-flappy-bird-zx-spectrum-available-old-school-method/)
 
 Right around the time of Flappy Bird's rise to fame, I was going through an obsessive phase with my Nintendo 64 and started learning as much as I could about the technical aspects of the system. It only seemed natural that the N64 should be blessed by its own version of the smash arcade hit game of the year.
 

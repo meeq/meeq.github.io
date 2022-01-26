@@ -8,6 +8,8 @@ tags:
   - Retrogaming
   - Necromancy
 ---
+*Editor's Note: LibDragon has changed since this was originally written. The command-line and code snippets in this article may not work correctly anymore.*
+
 Welcome back to my post-mortem series looking back at building a Flappy Bird clone playable on actual Nintendo 64 hardware. This second part is an exploration of starting a project with the `libdragon` N64 homebrew toolchain. We will be compiling and installing an open-source N64 software development kit from source and using it to build and test an N64 ROM in an emulator.
 
 ![libdragon spritetest example ROM]({{ site.url }}/assets/flappy/libdragon-spritetest.gif)
@@ -24,13 +26,13 @@ Check out the other posts in this series:
 
 `libdragon` expects the N64 SDK installation directory to be exported as the `N64_INST` variable in your shell. I have ensured that this variable is properly set in my bash sessions by adding it to `~/.bashrc` (or `~/.bash_profile` on MacOS):
 
-```shell
+```bash
 echo "export N64_INST=${HOME}/Projects/n64/mips64-toolchain" >> ~/.bashrc
 ```
 
 My preferred computing enviroment du jour is [Arch Linux](https://wiki.archlinux.org/index.php/Frequently_asked_questions), so in the spirit of the bleeding edge, I have made some [minor](https://github.com/meeq/libdragon/commit/42170cdc8c6e36e1f147a6fd8f834373ef68a86c) [modifications](https://github.com/meeq/libdragon/commit/42170cdc8c6e36e1f147a6fd8f834373ef68a86c) to `libdragon` in order to resolve compilation issues I encountered and [bumped the build dependency versions](https://github.com/meeq/libdragon/commit/093e862d3f4d480d05e757cf413cc4ffacffd60e) to the latest and greatest. You can [clone my fork of `libdragon`](https://github.com/meeq/libdragon) if you're following along at home:
 
-```shell
+```bash
 cd $N64_INST/..
 git clone git@github.com:meeq/libdragon.git
 ```
@@ -39,7 +41,7 @@ git clone git@github.com:meeq/libdragon.git
 
 Next, we will need to download, compile, and install a `mips64vr4300` toolchain into `$N64_INST` in order to build `libdragon`. This will take quite a while, so sit back and enjoy the show as `binutils`, `gcc` (pass 1), `newlib`, and `gcc` (pass 2) configures, compiles, and installs before your very eyes.
 
-```shell
+```bash
 LIBDRAGON_DIR=$(pwd)/libdragon
 mkdir -p $N64_INST/tmp
 cd $N64_INST/tmp
@@ -48,7 +50,7 @@ bash $LIBDRAGON_DIR/tools/build
 
 Finally, we are ready to build and install `libdragon` and its supporting tools into `$N64_INST`:
 
-```shell
+```bash
 cd $LIBDRAGON_DIRs
 make install
 make tools-install
@@ -58,7 +60,7 @@ make tools-install
 
 If all went well with the previous steps, we should be all set up and ready to build our first N64 ROM. We can verify that the toolchain installed correctly by compiling one of the examples included in `libdragon`:
 
-```shell
+```bash
 cd examples/spritemap
 sed -i -e 's/.v64/.z64/g' -e 's/$(N64TOOL) -b/$(N64TOOL)/g' Makefile
 make
@@ -86,7 +88,7 @@ Some emulators are generous and will happily accept ROMs of either flavor, somet
 
 [As we covered in part 1](/software/2017/05/31/flappy-bird-nintendo-64-part-1.html), `libdragon` requires accurate low-level emulation. You will also need a [dump of the Nintendo 64 PIF ROM](http://emulation.gametechwiki.com/index.php/Emulator_Files#Nintendo_64). At the moment, the best emulator I have found to test homebrew is [CEN64](https://github.com/tj90241/cen64) by [Tyler Stachecki (MarathonMan)](https://github.com/tj90241). I recommend building and running from source to keep up with the latest improvements:
 
-```shell
+```bash
 cd $N64_INST/..
 git clone git@github.com:tj90241/cen64.git
 cd cen64
@@ -96,7 +98,7 @@ make
 
 If all that was successful, you should be able to run the `cen64` binary with the `pifdata.bin` PIF ROM and the `spritemap.z64` cartridge ROM:
 
-```
+```bash
 ./cen64 $PATH_TO_PIFDATA_ROM $LIBDRAGON_DIR/examples/spritemap/spritemap.z64
 ```
 
@@ -211,8 +213,8 @@ While all of that is happening, the main loop is also being interrupted every 33
 
 The `spritemap` example has two code-paths for drawing based on the `mode` flag, which is toggled by pressing 'A' on player 1's controller inside the main loop, and renders the sprites with either software or hardware-accelerated drawing routines. The end result looks identical, but under the hood these two approaches are quite different:
 
-  * Software rendering uses the CPU to iterate over image pixel data in RAM and set it to the framebuffer directly. This is the "slow way" of drawing sprites, but it is not subject to the harsh 4KB TMEM limitation that the RDP imposes.
-  * Hardware rendering uses the RDP to load texture data into TMEM and blit it into the framebuffer while the CPU performs other tasks. This is the "fast way" of drawing, but sprites larger than 4KB must be broken up into smaller tiles or drawn in software due to extremely limited texture memory.
+* Software rendering uses the CPU to iterate over image pixel data in RAM and set it to the framebuffer directly. This is the "slow way" of drawing sprites, but it is not subject to the harsh 4KB TMEM limitation that the RDP imposes.
+* Hardware rendering uses the RDP to load texture data into TMEM and blit it into the framebuffer while the CPU performs other tasks. This is the "fast way" of drawing, but sprites larger than 4KB must be broken up into smaller tiles or drawn in software due to extremely limited texture memory.
 
 ## Wrapping up
 

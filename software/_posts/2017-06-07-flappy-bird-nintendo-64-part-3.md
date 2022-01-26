@@ -8,6 +8,8 @@ tags:
   - Retrogaming
   - Necromancy
 ---
+*Editor's Note: LibDragon has changed since this was originally written. The command-line and code snippets in this article may not work correctly anymore.*
+
 [In the previous post we set up our open-source N64 toolchain with `libdragon` and built the `spritemap` example ROM](/software/2017/06/06/flappy-bird-nintendo-64-part-2.html). In this third post we will continue pulling together the pieces necessary to pull off a convincing Flappy Bird clone despite the limitations of `libdragon` and the Nintendo 64 graphics hardware.
 
 Check out the other posts in this series:
@@ -32,14 +34,14 @@ Next we can start breaking this atlas out into separate spritesheets. The N64's 
 
 For the titles and the scoreboard we will just use the images as-is and render them in software to get around this TMEM limitation:
 
-  * ![Logo sprite]({{ site.url }}/assets/flappy/n64/logo.png)
-  * ![Headings spritesheet]({{ site.url }}/assets/flappy/n64/headings.png)
-  * ![Scoreboard sprite]({{ site.url }}/assets/flappy/n64/scoreboard.png)
-  * ![Medal spritesheet]({{ site.url }}/assets/flappy/n64/medal.png)
-  * ![New high score sprite]({{ site.url }}/assets/flappy/n64/new.png)
-  * ![Font small spritesheet]({{ site.url }}/assets/flappy/n64/font-small.png)
-  * ![Font medium spritesheet]({{ site.url }}/assets/flappy/n64/font-medium.png)
-  * ![Font large spritesheet]({{ site.url }}/assets/flappy/n64/font-large.png)
+* ![Logo sprite]({{ site.url }}/assets/flappy/n64/logo.png)
+* ![Headings spritesheet]({{ site.url }}/assets/flappy/n64/headings.png)
+* ![Scoreboard sprite]({{ site.url }}/assets/flappy/n64/scoreboard.png)
+* ![Medal spritesheet]({{ site.url }}/assets/flappy/n64/medal.png)
+* ![New high score sprite]({{ site.url }}/assets/flappy/n64/new.png)
+* ![Font small spritesheet]({{ site.url }}/assets/flappy/n64/font-small.png)
+* ![Font medium spritesheet]({{ site.url }}/assets/flappy/n64/font-medium.png)
+* ![Font large spritesheet]({{ site.url }}/assets/flappy/n64/font-large.png)
 
 Since we're going to be mapping the bird "flap" functionality to the "A" button on the controller, we're going to need a modified "tap the screen" instruction graphic:
 
@@ -91,7 +93,7 @@ Now that we have extracted the image atlas into separate spritesheets (as PNG fi
 
 The existing `Makefile` from the `spritemap` example covers 2 & 3, so all we need to do is iterate through all of the PNGs and call `mksprite` with the right arguments. Calling `mksprite` with no arguments yields its usage:
 
-```
+```plaintext
 Usage: mksprite <bit depth> [<horizontal slices> <vertical slices>] <input png> <output file>
         <bit depth> should be 16 or 32.
         <horizontal slices> should be a number two or greater signifying how many images are in this spritemap horizontally.
@@ -102,7 +104,7 @@ Usage: mksprite <bit depth> [<horizontal slices> <vertical slices>] <input png> 
 
 Well, we know the input and output files and we've established that the bit-depth is going to be 16, so all we need is a mapping of input files to number of horizonal and vertical slices in each spritesheet. I designated a file called `manifest.txt` alongside the PNG files to store this mapping in a simple whitespace-delimited text file:
 
-```
+```csv
 bg-city-day     1   1
 bg-city-night   1   1
 bg-cloud-day    1   1
@@ -129,7 +131,7 @@ To simplify the `Makefile`, I created a [utility script called `convert_gfx.sh`]
 
 ```make
 $(SPRITE_DIR)/%.sprite: $(PNG_DIR)/%.png $(PNG_DIR)/manifest.txt
-	sh ./convert_gfx.sh $<
+    sh ./convert_gfx.sh $<
 ```
 
 ### Handling sound effects
@@ -146,13 +148,13 @@ For our purposes, the easiest format to parse and handle is raw 16-bit signed-in
 SOXFLAGS = -b 16 -e signed-integer -B -r 44100
 
 $(PCM_DIR)/%.raw: $(AIFF_DIR)/%.aiff
-	@mkdir -p $(PCM_DIR)
-	@command -v sox >/dev/null 2>&1 || { \
-	    echo >&2 'This Makefile requires the `sox` command.'; \
-	    echo >&2 'Get it from http://sox.sourceforge.net/sox.html'; \
-	    exit 1; \
-	}
-	sox $< $(SOXFLAGS) $@ remix -
+    @mkdir -p $(PCM_DIR)
+    @command -v sox >/dev/null 2>&1 || { \
+        echo >&2 'This Makefile requires the `sox` command.'; \
+        echo >&2 'Get it from http://sox.sourceforge.net/sox.html'; \
+        exit 1; \
+    }
+    sox $< $(SOXFLAGS) $@ remix -
 ```
 
 ## Wrapping up
