@@ -1,4 +1,5 @@
 .DS_Store
+.directory
 .bundle
 .jekyll-metadata
 _site

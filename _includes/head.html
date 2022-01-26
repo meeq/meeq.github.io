@@ -10,7 +10,7 @@
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
   {% if page.title %}<meta property="og:title" content="{{ page.title | escape }}" />{% endif %}
   {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}" />{% endif %}
-  <meta property="og:type" content="{{ page.type | default: "website" | escape }}" />
+  <meta property="og:type" content="{{ page.type | default: 'website' | escape }}" />
 
   {% if page.type == "article" %}
   <meta property="og:article:author" content="{{ page.author | default: site.author | escape }}" />
@@ -19,9 +19,9 @@
   <meta property="og:article:tag" content="{{ page_tag | escape }}" />{% endfor %}
   {% endif %}
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
