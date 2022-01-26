@@ -14,6 +14,6 @@ You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://
 
 ## Projects
 
-* [![Gameplay clip of "Flappy Bird"]({{ site.url }}/assets/flappy/n64-gameplay.gif)<br />"Flappy Bird" clone for Nintendo 64](/FlappyBird-N64) [(GitHub) ![Github project link]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/FlappyBird-N64)
-* ["Another World" port for Nintendo 64 (GitHub) ![Github project link]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/AnotherWorld-N64)
-* ["Tamagotchi" emulator port for iOS/watchOS/tvOS (GitHub) ![Github project link]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/Tamatrix-Xcode)
+* ["Flappy Bird" clone for Nintendo 64 (GitHub) ![]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/FlappyBird-N64)
+* ["Another World" port for Nintendo 64 (GitHub) ![]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/AnotherWorld-N64)
+* ["Tamagotchi" emulator port for iOS/watchOS/tvOS (GitHub) ![]({{ site.url }}/assets/GitHub-Mark-20px.png)](https://github.com/meeq/Tamatrix-Xcode)
