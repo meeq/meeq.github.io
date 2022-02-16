@@ -26,8 +26,11 @@ You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://
 
 ## Contributions
 
-* [![]({{ site.github_logo_url }}) **[LibDragon]** Implement EEPROM filesystem abstraction to simplify saving/loading game state](https://github.com/DragonMinded/libdragon/pull/125)
+* [![]({{ site.github_logo_url }}) **[LibDragon]** Implement EEPROM filesystem abstraction to simplify saving/loading data](https://github.com/DragonMinded/libdragon/pull/125)
 * [![]({{ site.github_logo_url }}) **[LibDragon]** Implement Real-Time Clock subsystem to read/write the current date/time](https://github.com/DragonMinded/libdragon/pull/152)
+* [![]({{ site.github_logo_url }}) **[LibDragon]** Add tooling for EverDrive64 ROM Header Configuration](https://github.com/DragonMinded/libdragon/pull/153)
+* [![]({{ site.github_logo_url }}) **[LibDragon]** Enhance timer callbacks to support optional context parameter](https://github.com/DragonMinded/libdragon/pull/241)
+* [![]({{ site.github_logo_url }}) **[LibDragon]** Fix C++ global constructors](https://github.com/DragonMinded/libdragon/pull/118)
 * [![]({{ site.github_logo_url }}) **[cen64]** Fix security vulnerability in PIF emulation](https://github.com/n64dev/cen64/pull/206)
 * [![]({{ site.github_logo_url }}) **[cen64]** Improve Real-Time Clock accuracy; implement RTC write command](https://github.com/n64dev/cen64/pull/205)
 * [![]({{ site.github_logo_url }}) **[cen64]** Implement support for 768Kbit SRAM save type](https://github.com/n64dev/cen64/pull/204)
