@@ -13,8 +13,8 @@ You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://
 
 ## Serious Projects
 
-* [![]({{ site.github_logo_url }}) Passport.JS OAuth 2.0 plugin for "Sign in with Apple"](https://github.com/mix/passport-apple-id)
-* [![]({{ site.github_logo_url }}) JavaScript convenience wrapper for "BEM methodology"](https://github.com/mix/bem-entity)
+* [![]({{ site.github_logo_url }}) "Sign in with Apple" Passport.JS plugin](https://github.com/mix/passport-apple-id)
+* [![]({{ site.github_logo_url }}) "BEM methodology" JavaScript library](https://github.com/mix/bem-entity)
 
 ## Fun Projects
 
