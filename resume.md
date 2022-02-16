@@ -33,7 +33,7 @@ Software Engineer (2016–2017)
 
 * Contributed to development of TV app for iOS/tvOS and Music app for tvOS.
 * Extended functionality and fixed bugs in system applications and frameworks for iOS and tvOS.
-* Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://developer.apple.com/videos/play/wwdc2016/229/).
+* Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://www.youtube.com/watch?v=87N79AKy7mg).
 
 **Apple IS&T Retail Systems Development** *Santa Clara Valley, CA*<br />
 Lead Software Developer (2010–2016)
