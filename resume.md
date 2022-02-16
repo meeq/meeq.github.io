@@ -32,13 +32,14 @@ Senior Front-end Developer (2017-2021)
 Software Engineer (2016–2017)
 
 * Contributed to development of TV app for iOS/tvOS and Music app for tvOS.
-* Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://developer.apple.com/videos/play/wwdc2016/229/).
 * Extended functionality and fixed bugs in system applications and frameworks for iOS and tvOS.
+* Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://developer.apple.com/videos/play/wwdc2016/229/).
 
 **Apple IS&T Retail Systems Development** *Santa Clara Valley, CA*<br />
 Lead Software Developer (2010–2016)
 
-* Re-designed internal system for inventory tracking, ownership/usage logging, mobile device management, network provisioning, certificate management, lifecycle analysis, and labeling of Retail and Corporate equipment.
+* Developed a cross-platform, multi-user, real-time audio/visual control platform for conference rooms and event spaces.
+* Re-designed an internal system for inventory tracking; added support for ownership/usage logging, mobile device management, network provisioning, certificate management, lifecycle analysis, and labeling of Retail and Corporate equipment.
 * Created rapidly-iterable demonstration prototypes as well as battle-tested, cross-datacenter production systems with thousands of simultaneous users.
 * Prototyped an RFID-based retail self-checkout process using Erlang and WebSockets.
 
@@ -52,9 +53,9 @@ Web Developer (2010)
 Service Technician, Customer Support (2008–2010)
 
 * Directly supported customers with computer hardware and software issues.
-* Performed basic component swap repairs on personal computers and handheld devices.
+* Diagnosed and performed repairs on personal computers and handheld devices.
 * Developed applications and scripts in JavaScript and Python to improve workflow.
-* Deployed and configured in-store software using multicast imaging and AppleScript.
+* Deployed and configured demo software on desktop and portable computers using multicast imaging and AppleScript.
 
 ## Education
 
