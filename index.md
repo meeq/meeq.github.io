@@ -13,7 +13,7 @@ You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://
 
 ## Silly Projects
 
-* [Cartridge Save Detection Test ROM for Nintendo 64](/SaveTest-N64) [![]({{ site.github_logo_url }})](https://github.com/meeq/SaveTest-N64)
-* ["Flappy Bird" clone for Nintendo 64](/FlappyBird-N64) [![]({{ site.github_logo_url }})](https://github.com/meeq/FlappyBird-N64)
-* ["Another World" port for Nintendo 64](/AnotherWorld-N64) [![]({{ site.github_logo_url }})](https://github.com/meeq/AnotherWorld-N64)
-* ["Tamagotchi" emulator port for iOS/watchOS/tvOS](/Tamatrix-Xcode) [![]({{ site.github_logo_url }})](https://github.com/meeq/Tamatrix-Xcode)
+* [![]({{ site.github_logo_url }})](https://github.com/meeq/SaveTest-N64) [Cartridge Save Detection Test ROM for Nintendo 64](/SaveTest-N64)
+* [![]({{ site.github_logo_url }})](https://github.com/meeq/FlappyBird-N64) ["Flappy Bird" clone for Nintendo 64](/FlappyBird-N64)
+* [![]({{ site.github_logo_url }})](https://github.com/meeq/AnotherWorld-N64) ["Another World" port for Nintendo 64](/AnotherWorld-N64)
+* [![]({{ site.github_logo_url }})](https://github.com/meeq/Tamatrix-Xcode) ["Tamagotchi" emulator port for iOS/watchOS/tvOS](/Tamatrix-Xcode)
