@@ -5,7 +5,7 @@ title: Resume
 ## Skills
 
 * Extensive software development knowledge and experience using Erlang, JavaScript, TypeScript, Python, Go, C, C++, Objective-C, Swift.
-* Shipped software products using industry-standard frameworks like NextJS, ReactJS, Backbone.JS, Cocoa, UIKit, CoreGraphics, PyObj-C.
+* Shipped software products using industry-standard frameworks like NextJS, ReactJS, Backbone.JS, Cocoa, UIKit, SDL, CoreGraphics, PyObj-C.
 * Experience with the use and operation of relational (Postgres, SQLite) and non-relational (CouchDB, MongoDB) databases.
 * Fluent with common protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
 
@@ -24,7 +24,7 @@ Senior Front-end Developer (2017-2021)
 
 * Re-built and maintained a [social bookmarking web application](https://mix.com) using Webpack, ReactJS, Redux, and SASS.
 * Modernized ECMAScript 5 client and server code to ECMAScript 2017 (ES8).
-* Implemented a flexible front-end framework for A/B testing, UI experiments, and feature flags
+* Implemented a flexible front-end framework for A/B testing, UI experiments, and feature flags.
 * [Developed a Passport.js authentication plugin for "Sign in with Apple ID".](https://github.com/mix/passport-apple-id)
 * Prototyped a desktop-based browser-centric exploration app using TypeScript and Electron.
 
@@ -36,7 +36,7 @@ Software Engineer (2016–2017)
 * Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://www.youtube.com/watch?v=87N79AKy7mg).
 
 **Apple IS&T Retail Systems Development** *Santa Clara Valley, CA*<br />
-Lead Software Developer (2010–2016)
+Full-Stack Software Developer (2010–2016)
 
 * Developed a cross-platform, multi-user, real-time audio/visual control platform for conference rooms and event spaces.
 * Re-designed an internal system for inventory tracking; added support for ownership/usage logging, mobile device management, network provisioning, certificate management, lifecycle analysis, and labeling of Retail and Corporate equipment.
