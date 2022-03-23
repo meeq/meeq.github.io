@@ -23,6 +23,7 @@ You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://
 * [![]({{ site.github_logo_url }})](https://github.com/meeq/Tamatrix-Xcode) ["Tamagotchi" emulator port for iOS/watchOS/tvOS](/Tamatrix-Xcode)
 * [![]({{ site.github_logo_url }})](https://github.com/meeq/SaveTest-N64) ["Cartridge Save Detection" test ROM for Nintendo 64](/SaveTest-N64)
 * [![]({{ site.github_logo_url }})](https://github.com/meeq/KeyboardTest-N64) ["RandNET Keyboard" test ROM for Nintendo 64](/KeyboardTest-N64)
+* [![]({{ site.github_logo_url }})](https://github.com/meeq/JoypadTest-N64) [Abstraction library to support GameCube controllers on Nintendo 64](/JoypadTest-N64)
 
 ## Contributions
 
