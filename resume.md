@@ -7,7 +7,7 @@ title: Resume
 * Extensive software development knowledge and experience using Erlang, JavaScript, TypeScript, Python, Go, C, C++, Objective-C, Swift.
 * Shipped software products using industry-standard frameworks like NextJS, ReactJS, Backbone.JS, Cocoa, UIKit, SDL, CoreGraphics, PyObj-C.
 * Experience with the use and operation of relational (Postgres, SQLite) and non-relational (CouchDB, MongoDB) databases.
-* Fluent with common protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
+* Fluent with network protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
 
 ## Work Experience
 
@@ -27,6 +27,7 @@ Senior Front-end Developer (2017-2021)
 * Implemented a flexible front-end framework for A/B testing, UI experiments, and feature flags.
 * [Developed a Passport.js authentication plugin for "Sign in with Apple ID".](https://github.com/mix/passport-apple-id)
 * Prototyped a desktop-based browser-centric exploration app using TypeScript and Electron.
+* Led a small team using Agile software development methodology.
 
 **Apple TV** *Cupertino, CA*<br />
 Software Engineer (2016–2017)
