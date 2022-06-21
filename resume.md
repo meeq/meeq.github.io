@@ -12,7 +12,7 @@ title: Resume
 ## Work Experience
 
 **Stryk Group USA** *Bozeman, MT* (Remote)<br />
-Senior Software Engineer (2021-Present)
+Senior Software Engineer (2021-2022)
 
 * Implemented a business intelligence pipeline for analyzing and reporting key metrics for a high-traffic website.
 * Contributed to the design of an anti-fragile, privacy-focused advertising and analytics platform.
@@ -34,7 +34,7 @@ Software Engineer (2016–2017)
 
 * Contributed to development of TV app for iOS/tvOS and Music app for tvOS.
 * Extended functionality and fixed bugs in system applications and frameworks for iOS and tvOS.
-* Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://youtu.be/87N79AKy7mg?t=1794).
+* Presented on-stage at [WWDC 2016 session on ’Developing tvOS apps using TVMLKit’](https://youtu.be/rg2SOBDs8Po?t=1794).
 
 **Apple IS&T Retail Systems Development** *Santa Clara Valley, CA*<br />
 Full-Stack Software Developer (2010–2016)
