@@ -4,12 +4,20 @@ title: Resume
 
 ## Skills
 
-* Extensive software development knowledge and experience using Erlang, JavaScript, TypeScript, Python, Go, C, C++, Objective-C, Swift.
-* Shipped software products using industry-standard frameworks like NextJS, ReactJS, Backbone.JS, Cocoa, UIKit, SDL, CoreGraphics, PyObj-C.
-* Experience with the use and operation of relational (Postgres, SQLite) and non-relational (CouchDB, MongoDB) databases.
-* Fluent with network protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
+* Extensive software development knowledge and experience using TypeScript, JavaScript, Erlang, Python, C, C++, Objective-C, Swift, Go, Ruby, PHP.
+* Shipped software products using industry-standard frameworks like Remix, Next.js, React, Backbone, UIKit, SproutCore, SDL, CoreGraphics, PyObjC.
+* Experience with the use and operation of relational databases (Postgres, SQLite) and non-relational data stores (CouchDB, MongoDB, Redis).
+* Fluent with communication protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
 
 ## Work Experience
+
+**Fabius Labs, Inc.** *Dallas, TX* (Remote)<br />
+Technology Consultant and Engineering Manager (2022-Present)
+
+* Built a proof-of-concept Kubernetes-as-a-service demo using Terraform, Ansible, RKE2, and Rancher.
+* Oversaw and contributed to the development of a private social media app using Remix and Supabase.
+* Developed marketing and business websites using Next.js, TailwindCSS, Strapi, and Sanity.
+* Designed a HIPAA-compliant technology architecture for a HealthTech startup.
 
 **Stryk Group USA** *Bozeman, MT* (Remote)<br />
 Senior Software Engineer (2021-2022)
