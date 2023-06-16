@@ -9,7 +9,7 @@ title: Resume
 * Experience with the use and operation of relational databases (Postgres, SQLite) and non-relational data stores (CouchDB, MongoDB, Redis).
 * Fluent with communication protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
 
-## Work Experience
+## Employment History
 
 **Fabius Labs, Inc.** *Dallas, TX* (Remote)<br />
 Technology Consultant and Engineering Manager (2022-Present)
