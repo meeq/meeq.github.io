@@ -23,7 +23,7 @@ Technology Consultant and Engineering Manager (2022-Present)
 Senior Software Engineer (2021-2022)
 
 * Implemented a business intelligence pipeline for analyzing and reporting key metrics for a high-traffic website.
-* Contributed to the design of an anti-fragile, privacy-focused advertising and analytics platform.
+* Contributed to the design of a multi-cloud, privacy-focused advertising and analytics platform.
 * Developed integration tooling in TypeScript for NetSuite, Zendesk, MailChimp, Google Places, Hull, PeopleDataLabs.
 * Oversaw development and testing of a cross-platform social media app by an external developer.
 
