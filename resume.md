@@ -4,15 +4,18 @@ title: Resume
 
 ## Skills
 
-* Extensive software development knowledge and experience using TypeScript, JavaScript, Erlang, Python, C, C++, Objective-C, Swift, Go, Ruby, PHP.
+* Extensive software development knowledge and experience using TypeScript, JavaScript, Erlang, Elixir, Python, C, C++, Objective-C, Swift, Go, Ruby, PHP.
 * Shipped software products using industry-standard frameworks like Remix, Next.js, React, Backbone, UIKit, SproutCore, SDL, CoreGraphics, PyObjC.
 * Experience with the use and operation of relational databases (Postgres, SQLite) and non-relational data stores (CouchDB, MongoDB, Redis).
 * Fluent with communication protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
 
 ## Employment History
 
+**HyperSphere Technologies, Inc.** (Remote)<br />
+Vice President of Software Engineering and Product (2023-Present)
+
 **Fabius Labs, Inc.** *Dallas, TX* (Remote)<br />
-Technology Consultant and Engineering Manager (2022-Present)
+Technology Consultant and Engineering Manager (2022-2023)
 
 * Built a proof-of-concept Kubernetes-as-a-service demo using Terraform, Ansible, RKE2, and Rancher.
 * Oversaw and contributed to the development of a private social media app using Remix and Supabase.
