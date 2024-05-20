@@ -25,11 +25,12 @@ You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://
 * [![]({{ site.github_logo_url }})](https://github.com/meeq/KeyboardTest-N64) ["RandNET Keyboard" test ROM for Nintendo 64](/KeyboardTest-N64)
 * [![]({{ site.github_logo_url }})](https://github.com/meeq/JoypadTest-N64) [GameCube controller support for Nintendo 64](/JoypadTest-N64)
 
-## Contributions
+## Notable Open-Source Contributions
 
-* [![]({{ site.github_logo_url }}) **[LibDragon]** EEPROM filesystem abstraction to simplify saving/loading data](https://github.com/DragonMinded/libdragon/pull/125)
+* [![]({{ site.github_logo_url }}) **[LibDragon]** Asynchronous, interrupt-driven Joypad subsystem](https://github.com/DragonMinded/libdragon/pull/430)
 * [![]({{ site.github_logo_url }}) **[LibDragon]** Real-Time Clock subsystem to read/write the current date/time](https://github.com/DragonMinded/libdragon/pull/152)
 * [![]({{ site.github_logo_url }}) **[LibDragon]** EverDrive64 ROM Header Configuration tooling](https://github.com/DragonMinded/libdragon/pull/153)
+* [![]({{ site.github_logo_url }}) **[LibDragon]** EEPROM filesystem abstraction to simplify saving/loading data](https://github.com/DragonMinded/libdragon/pull/125)
 * [![]({{ site.github_logo_url }}) **[LibDragon]** Enhance timer callbacks to support optional context parameter](https://github.com/DragonMinded/libdragon/pull/241)
 * [![]({{ site.github_logo_url }}) **[LibDragon]** Fix C++ global constructors](https://github.com/DragonMinded/libdragon/pull/118)
 * [![]({{ site.github_logo_url }}) **[cen64]** Fix security vulnerability in PIF emulation](https://github.com/n64dev/cen64/pull/206)
@@ -37,3 +38,4 @@ You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://
 * [![]({{ site.github_logo_url }}) **[cen64]** Support for 768Kbit SRAM save type](https://github.com/n64dev/cen64/pull/204)
 * [![]({{ site.github_logo_url }}) **[cen64]** Improve EEPROM save type support](https://github.com/n64dev/cen64/pull/203)
 * [![]({{ site.github_logo_url }}) **[Mupen64Plus-Core]** Improve EEPROM save type support](https://github.com/mupen64plus/mupen64plus-core/pull/878)
+* [![]({{ site.github_logo_url }}) **[Bandit]** Support for precomputed Content-Length in HTTP HEAD responses](https://github.com/mtrudel/bandit/pull/353)
