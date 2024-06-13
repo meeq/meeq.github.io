@@ -4,8 +4,8 @@ title: Resume
 
 ## Skills
 
-* Extensive software development knowledge and experience using TypeScript, JavaScript, Erlang, Elixir, Python, C, C++, Objective-C, Swift, Go, Ruby, PHP.
-* Shipped software products using industry-standard frameworks like Remix, Next.js, React, Backbone, UIKit, SproutCore, SDL, CoreGraphics, PyObjC.
+* Extensive software development knowledge and experience using TypeScript, ECMAScript, Erlang, Elixir, Python, C, C++, Objective-C, Swift, Go, Ruby, PHP.
+* Shipped software products using industry-standard frameworks such as OTP, Remix, Next.js, React, Backbone, UIKit, SproutCore, SDL, CoreGraphics, PyObjC.
 * Experience with the use and operation of relational databases (Postgres, SQLite) and non-relational data stores (CouchDB, MongoDB, Redis).
 * Fluent with communication protocols such as HTTP, REST, GraphQL, protobuf, WebSockets, TCP/UDP Sockets, SSL/TLS, MDM, RFID (LLRP).
 
