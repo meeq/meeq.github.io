@@ -11,8 +11,12 @@ title: Resume
 
 ## Employment History
 
-**HyperSphere Technologies, Inc.** (Remote)<br />
-Vice President of Software Engineering and Product (2023-Present)
+**Stealth Cybersecurity Startup** (Remote)<br />
+VP of Software Engineering and Product (2023-2024)
+
+* Implemented and refined a novel [Multi-Party Threshold Cryptography](https://csrc.nist.rip/Projects/threshold-cryptography) algorithm for key-splitting
+* Architected a distributed encrypted storage system for hybrid cloud and edge deployments
+* Technical lead for NIST National Checklist Program readiness using OpenControl
 
 **Fabius Labs, Inc.** *Dallas, TX* (Remote)<br />
 Technology Consultant and Engineering Manager (2022-2023)
