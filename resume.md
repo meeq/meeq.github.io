@@ -14,6 +14,8 @@ title: Resume
 **Meeq Corporation** (Remote)<br />
 Founder and President (2024-Current)
 
+* Information/technology consulting
+
 **HyperSphere Technologies, Inc.** (Remote)<br />
 VP of Software Engineering and Product (2023-2024)
 
