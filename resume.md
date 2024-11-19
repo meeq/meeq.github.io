@@ -11,7 +11,10 @@ title: Resume
 
 ## Employment History
 
-**Stealth Cybersecurity Startup** (Remote)<br />
+**Meeq Corporation** (Remote)<br />
+Founder and President (2024-Current)
+
+**HyperSphere Technologies, Inc.** (Remote)<br />
 VP of Software Engineering and Product (2023-2024)
 
 * Implemented and refined a novel [Multi-Party Threshold Cryptography](https://csrc.nist.rip/Projects/threshold-cryptography) algorithm for key-splitting
