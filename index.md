@@ -11,12 +11,12 @@ Lately I have been tinkering with homebrew Nintendo 64 development using [LibDra
 
 You can also find me on [Twitter](https://twitter.com/meeq64), [GitHub](https://github.com/meeq), and [LinkedIn](https://www.linkedin.com/in/christopher-bonhage-629612136/).
 
-## Serious Projects
+## Serious Open-Source Projects
 
 * [![]({{ site.github_logo_url }}) "Sign in with Apple" Passport.JS plugin](https://github.com/mix/passport-apple-id)
 * [![]({{ site.github_logo_url }}) "BEM methodology" JavaScript library](https://github.com/mix/bem-entity)
 
-## Fun Projects
+## Fun Open-Source Projects
 
 * [![]({{ site.github_logo_url }})](https://github.com/meeq/FlappyBird-N64) ["Flappy Bird" clone for Nintendo 64](/FlappyBird-N64)
 * [![]({{ site.github_logo_url }})](https://github.com/meeq/AnotherWorld-N64) ["Another World" port for Nintendo 64](/AnotherWorld-N64)
