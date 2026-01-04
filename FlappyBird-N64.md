@@ -1,3 +1,4 @@
 ---
-redirect_to: https://github.com/meeq/FlappyBird-N64
+layout: redirect
+redirect_to: /flappybird-n64
 ---
